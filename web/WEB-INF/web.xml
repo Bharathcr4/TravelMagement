@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>servlets.LoginServlets</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>servlets.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Route</servlet-name>
+        <servlet-class>servlets.RouteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Route</servlet-name>
+        <url-pattern>/Route</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Vehicle</servlet-name>
+        <servlet-class>servlets.VehicleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Vehicle</servlet-name>
+        <url-pattern>/Vehicle</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Book</servlet-name>
+        <servlet-class>servlets.BookServlets</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>Book</servlet-name>
+        <url-pattern>/Book</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>DeleteRoute</servlet-name>
+        <servlet-class>servlets.DeleteServlets</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>DeleteRoute</servlet-name>
+        <url-pattern>/DeleteRoute</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Feedback</servlet-name>
+        <servlet-class>servlets.FeedbackServlets</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>Feedback</servlet-name>
+        <url-pattern>/Feedback</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>CancelBook</servlet-name>
+        <servlet-class>servlets.CancelServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>CancelBook</servlet-name>
+        <url-pattern>/CancelBook</url-pattern>
+    </servlet-mapping>
+    
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
